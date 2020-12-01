@@ -36,6 +36,7 @@
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 0 20px;
+  overflow: scroll;
 }
 
 .room {
@@ -55,6 +56,25 @@
 .chat-top {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-top-left {
+  color: #333;
+  font-size: 24px;
+  padding-top: 36px;
+}
+
+.chat-top-right {
+  padding-top: 40px;
+}
+
+.chat-top-right a {
+  color: darkred;
+  border: 1px solid darkred;
+  text-decoration: none;
+  padding: 20px;
 }
 
 .chat-main {
@@ -62,10 +82,69 @@
   height: calc(100vh - 100px - 90px);
   padding-top: 46px;
   padding: 46px 40px 0 40px;
+  overflow: scroll;
+}
+
+.name-date {
+  display: flex;
+  padding: 10px 0;
+}
+
+.name {
+  color: #434a54;
+  margin-right: 10px;
+}
+
+.date {
+  color: #999;
+  font-size: 12px;
+}
+
+.text {
+  font-size: 14px;
+  color: #434a54;
+  margin-bottom: 40px;
 }
 
 .chat-bottom {
   background-color: #ddd;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.form-left {
+  padding-left: 10px;
+  height: 50px;
+  border: none;
+  width: 100%;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-right {
+  height: 50px;
+  background-color: #38aef0;
+  padding: 0 20px;
+  color: white;
+  border: none;
+  margin-left: 15px;
 }
