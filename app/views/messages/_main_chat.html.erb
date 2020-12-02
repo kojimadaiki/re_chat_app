@@ -31,14 +31,14 @@
       <p>おつかれ</p>
     </div>
   </div>
-  <div class="chat-bottom">
+  <%= form_with model: [@room, @message], class: 'chat-bottom', local: true do |f| %>
     <div class="form">
-      <input type="text" placeholder="type a message" class="form-left">
+      <%= f.text_field :content, class: 'form-left', placeholder: 'type a message' %>
       <label class="form-image">
         <span class="image-file">画像</span>
-        <input type="file" class="hidden">
+        <%= f.file_field :image, class: 'hidden' %>
       </label>
     </div>
-    <input type="submit" value="送信" class="form-right">
-  </div>
+    <%= f.submit '送信', class: 'form-right' %>
+  <% end %>
 </div>
