@@ -3,7 +3,7 @@
     <%= render "side_bar" %>
     <div class="side-bar-top">
       <div class="side-bar-top-left">
-        <a href="#">Tom</a>
+        <%= link_to current_user.name, edit_user_path(current_user) %>
       </div>
       <div class="side-bar-top-right">
         <a href="#">チャットを作成する</a>
